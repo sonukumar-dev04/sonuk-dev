@@ -28,7 +28,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${font.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <AOSInit />
         <Provider>
           <ResponsiveNav />

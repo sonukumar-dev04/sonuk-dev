@@ -4,7 +4,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link
-      href="#home"
+      href="/"
       className="flex items-center gap-2 group"
       aria-label="Home"
     >
