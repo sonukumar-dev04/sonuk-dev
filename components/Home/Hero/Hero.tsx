@@ -97,7 +97,7 @@ const HeroSection = () => {
           </button>
 
           <a
-            href="/cv.pdf"
+            href="/Sonu_Kumar_Resume.pdf"
             download
             className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm
               border border-gray-300 text-gray-800 bg-white hover:bg-gray-50

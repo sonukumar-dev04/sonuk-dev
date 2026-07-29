@@ -1,4 +1,4 @@
-import { Terminal } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Logo = () => {
@@ -9,12 +9,17 @@ const Logo = () => {
       aria-label="Home"
     >
       <div
-        className="flex items-center justify-center w-9 h-9 rounded-xl
-          bg-gradient-to-br from-violet-600 to-indigo-600
-          shadow-md shadow-violet-200 dark:shadow-violet-900/40
+        className="relative w-10 h-10 rounded-xl overflow-hidden
           group-hover:scale-105 transition-transform duration-200"
       >
-        <Terminal size={18} className="text-white" strokeWidth={2.5} />
+        <Image
+          src="/images/coding1.png"
+          alt="Logo"
+          fill
+          sizes="(max-width: 768px) 100vw, 400px"
+          className="object-cover"
+          priority
+        />
       </div>
     </Link>
   );

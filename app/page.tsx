@@ -1,8 +1,8 @@
-import Home from '@/components/Home/Home'
-import React from 'react'
+import Home from "@/components/Home/Home";
+import React from "react";
 
 const Homepage = () => {
-  return <Home/>
-}
+  return <Home />;
+};
 
-export default Homepage
+export default Homepage;

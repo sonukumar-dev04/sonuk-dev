@@ -1,4 +1,4 @@
-import { MapPin, GraduationCap, Laptop, Coffee } from "lucide-react";
+import { MapPin, GraduationCap, Laptop, Code } from "lucide-react";
 import {
   SiReact,
   SiNextdotjs,
@@ -7,31 +7,36 @@ import {
   SiJavascript,
   SiHtml5,
   SiCss,
+  SiBootstrap,
+  SiRedux,
+  SiShadcnui, 
   SiNodedotjs,
   SiExpress,
   SiMongodb,
-  SiPostgresql,
+  SiMongoose,
+  SiMysql ,
   SiGit,
   SiGithub,
-  SiFigma,
+  SiNpm ,
   SiPostman,
   SiVercel,
+  SiRender ,
 } from "react-icons/si";
 
 // ─── About Stats ───────────────────────────────────────────
 export const stats = [
   { value: "5+", label: "Projects Built" },
   { value: "10+", label: "GitHub Repos" },
-  { value: "10+", label: "Technologies" },
-  { value: "6+", label: "Months Coding" },
+  { value: "15+", label: "Technologies" },
+  { value: "10+", label: "Months Coding" },
 ];
 
 // ─── About Info ────────────────────────────────────────────
 export const info = [
   { icon: MapPin, text: "Hyderabad, India" },
-  { icon: GraduationCap, text: "B.Tech — Computer Science" },
+  { icon: GraduationCap, text: "B.Com — Computers" },
   { icon: Laptop, text: "Open for opportunities" },
-  { icon: Coffee, text: "Powered by chai & curiosity" },
+  { icon: Code, text: "MERN & Next.js developer" },
 ];
 
 // ─── Skills ────────────────────────────────────────────────
@@ -39,13 +44,17 @@ export const skillCategories = [
   {
     category: "Frontend",
     skills: [
+       { name: "HTML5", icon: SiHtml5 },
+      { name: "CSS3", icon: SiCss },
+      { name: "JavaScript", icon: SiJavascript },
       { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
       { name: "TypeScript", icon: SiTypescript },
-      { name: "JavaScript", icon: SiJavascript },
       { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "HTML5", icon: SiHtml5 },
-      { name: "CSS3", icon: SiCss  },
+      { name: "Bootstrap ", icon: SiBootstrap },
+      { name: "Redux  ", icon: SiRedux  },
+      { name: "Shadcnui   ", icon: SiShadcnui   },
+     
     ],
   },
   {
@@ -54,7 +63,9 @@ export const skillCategories = [
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Express", icon: SiExpress },
       { name: "MongoDB", icon: SiMongodb },
-      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "Mongoose ", icon: SiMongoose  },
+      { name: "Mysql  ", icon: SiMysql   },
+
     ],
   },
   {
@@ -62,9 +73,10 @@ export const skillCategories = [
     skills: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
-      { name: "Figma", icon: SiFigma },
+      { name: "Npm ", icon: SiNpm  },
       { name: "Postman", icon: SiPostman },
       { name: "Vercel", icon: SiVercel },
+      { name: "Render ", icon: SiRender  },
     ],
   },
 ];
@@ -72,31 +84,40 @@ export const skillCategories = [
 // ─── Projects ──────────────────────────────────────────────
 export const projects = [
   {
-    title: "Portfolio Website",
+    title: "Chef AI",
     description:
-      "My personal developer portfolio built with Next.js, TypeScript, and Tailwind CSS. Features smooth scroll navigation, dark/light mode, type animations, and fully responsive design across all devices.",
-    image: "/images/projects/portfolio.png",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-    liveUrl: "https://yourportfolio.vercel.app",
-    githubUrl: "https://github.com/yourusername/portfolio",
+      "AI-Powered Recipe & Pantry Management Platform. Built with Next.js and Gemini AI — cook with ingredients you already have, get nutritional breakdowns, and export recipes as PDF.",
+    image: "/images/chefai.png",
+    stack: ["Next.js", "Gemini AI", "Neon DB", "Clerk", "shadcn/ui"],
+    liveUrl: "https://chef-ai-lilac.vercel.app",
+    githubUrl: "https://github.com/light04sk/ChefAi",
   },
   {
-    title: "Project Two",
+    title: "ProNet",
     description:
-      "Describe your second project here — what problem it solves, what you built, and what you learned. Keep it specific and honest.",
-    image: "/images/projects/project2.png",
-    stack: ["React", "Node.js", "MongoDB", "Express"],
-    liveUrl: "https://yourproject.vercel.app",
-    githubUrl: "https://github.com/yourusername/project2",
+      "Full-Stack Social Networking Platform with real-time chat via Socket.io, JWT auth, friend requests, live notifications, and Cloudinary image storage.",
+    image: "/images/pronet.png",
+    stack: ["MERN Stack", "Socket.io", "Redux Toolkit", "JWT", "Cloudinary"],
+    liveUrl: "https://mern-social-network.vercel.app",
+    githubUrl: "https://github.com/light04sk/mern-social-network",
   },
   {
-    title: "Project Three",
+    title: "Cartify",
     description:
-      "Describe your third project here. Even a small CRUD app or a clone project counts — mention the key features and tech you used.",
-    image: "/images/projects/project3.png",
-    stack: ["React", "Tailwind CSS", "Firebase"],
-    liveUrl: "https://yourproject.vercel.app",
-    githubUrl: "https://github.com/yourusername/project3",
+      "E-Commerce Frontend with filtering, search, sorting, pagination, infinite scroll, cart/wishlist functionality, and Supabase authentication.",
+    image: "/images/cartify.png",
+    stack: ["React.js", "Tailwind CSS", "Supabase"],
+    liveUrl: "https://cartify-inky-omega.vercel.app",
+    githubUrl: "https://github.com/light04sk/Cartify",
+  },
+  {
+    title: "TripTide",
+    description:
+      "Airbnb-Inspired Property Listing Platform with full CRUD, owner auth, review/rating system, Cloudinary uploads, and Map API location display.",
+    image: "/images/triptide.png",
+    stack: ["Node.js", "Express.js", "MongoDB", "Cloudinary", "Map API"],
+    liveUrl: "https://trip-tide-project.onrender.com",
+    githubUrl: "https://github.com/light04sk/Trip-Tide-Airbnb-clone-",
   },
 ];
 
@@ -104,37 +125,37 @@ export const projects = [
 export const education = [
   {
     type: "school",
-    year: "2018 - 2019",
+    year: "2020",
     degree: "Secondary School (10th)",
-    institution: "Your School Name",
-    description: "Completed schooling with focus on Science and Mathematics.",
-    grade: "GPA: 9.2 / 10",
+    institution: "Santhoshi Matha School",
+    description:
+      "Completed my schooling with a well-rounded academic foundation.",
+    grade: "GPA: 9.0 / 10",
   },
   {
     type: "intermediate",
-    year: "2020 - 2021",
-    degree: "Intermediate (12th) — MPC",
-    institution: "Your College Name",
+    year: "2020 - 2022",
+    degree: "Intermediate (12th) — MEC",
+    institution: "Bhavan's Sri Aurobindo Junior College",
     description:
-      "Studied Mathematics, Physics and Chemistry. Developed strong analytical thinking.",
-    grade: "Score: 92%",
+      "Studied Mathematics, Economics and Commerce. Built a strong foundation in analytical and logical thinking.",
   },
   {
     type: "degree",
-    year: "2022 - 2026",
-    degree: "B.Tech — Computer Science & Engineering",
-    institution: "Your University Name",
+    year: "2022 - 2025",
+    degree: "B.Com — Computers",
+    institution: "St. Mary's Centenary Degree College",
     description:
-      "Currently pursuing my degree with focus on web development, data structures, and software engineering.",
+      "Graduated with a combined focus on commerce fundamentals and computer applications.",
     grade: "CGPA: 7.8 / 10",
   },
   {
     type: "course",
-    year: "2024",
-    degree: "Full Stack Web Development",
-    institution: "Online / Self-taught (YouTube, Udemy etc.)",
+    year: "2025",
+    degree: "Full Stack Web Development — Delta 7.0",
+    institution: "Apna College",
     description:
-      "Learned MERN stack, Next.js, TypeScript, Tailwind CSS and built multiple projects hands-on.",
+      "Completed an in-depth MERN stack program covering both frontend and backend development — from building responsive UIs to designing REST APIs, working with databases, authentication, and deployment.",
     grade: "Completed ✓",
   },
 ];
@@ -147,14 +168,14 @@ export const contactInfo = [
   {
     icon: MdEmail,
     label: "Email",
-    value: "youremail@gmail.com",
-    href: "mailto:youremail@gmail.com",
+    value: "nsonukumar39630@gmail.com",
+    href: "mailto:nsonukumar39630@gmail.com",
   },
   {
     icon: FaGithub,
     label: "GitHub",
-    value: "github.com/yourusername",
-    href: "https://github.com/yourusername",
+    value: "github.com/light04sk",
+    href: "https://github.com/light04sk",
   },
   {
     icon: FaLinkedin,

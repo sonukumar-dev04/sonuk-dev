@@ -42,8 +42,7 @@ const Footer = () => {
               <span className="text-violet-600 dark:text-violet-400">.</span>
             </Link>
             <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs">
-              Building clean, functional web experiences — one project at a
-              time.
+              Building clean, functional web experiences with precision.
             </p>
           </div>
 
@@ -80,7 +79,7 @@ const Footer = () => {
 
         {/* ── Bottom row: copyright ── */}
         <p className="mt-6 text-center text-xs text-gray-400 dark:text-gray-500 flex items-center justify-center gap-1.5 flex-wrap">
-          © {year} Sonu Kumar. Built with
+          © {year} Built with
           <Heart size={12} className="text-violet-500 fill-violet-500" />
           using Next.js &amp; Tailwind CSS.
         </p>

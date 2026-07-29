@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "./Hero/Hero";
 import SkillsSection from "./Skills/Skills";
 import AboutSection from "./About/About";

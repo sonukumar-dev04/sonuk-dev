@@ -1,21 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { MapPin, GraduationCap, Laptop, Coffee } from "lucide-react";
-
-const stats = [
-  { value: "5+", label: "Projects Built" },
-  { value: "10+", label: "GitHub Repos" },
-  { value: "10+", label: "Technologies" },
-  { value: "6+", label: "Months Coding" },
-];
-
-const info = [
-  { icon: MapPin, text: "Hyderabad, India" },
-  { icon: GraduationCap, text: "B.Tech — Computer Science" },
-  { icon: Laptop, text: "Open for opportunities" },
-  { icon: Coffee, text: "Powered by chai & curiosity" },
-];
+import { stats, info } from "@/data/Data";
 
 const AboutSection = () => {
   return (
@@ -47,9 +33,10 @@ const AboutSection = () => {
               className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl border-2 border-violet-100 dark:border-violet-900/50"
             >
               <Image
-                src="/images/profile.jpg"
+                src="/images/profile1.png"
                 alt="Sonu — profile photo"
                 fill
+                sizes="(max-width: 768px) 100vw, 400px"
                 className="object-cover object-top"
                 priority
               />
@@ -70,10 +57,12 @@ const AboutSection = () => {
             </h3>
 
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              I&apos;m a Computer Science student with a strong passion for web
-              development. My journey started with curiosity about how websites
-              work, and it has grown into a love for building clean, functional,
-              and user-friendly applications.
+              I come from a commerce background — I completed my B.Com in
+              Computers, which gave me a foundation in both computer
+              applications and business fundamentals. But my real passion has
+              always been web development. My journey started with curiosity
+              about how websites work, and it has grown into a love for building
+              clean, functional, and user-friendly applications.
             </p>
 
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">

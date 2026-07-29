@@ -52,10 +52,10 @@ const ContactSection = () => {
         </div>
 
         {/* items-start so both columns align at the top, no forced stretching */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:items-stretch">
           {/* ── Left: Info ── */}
           <div
-            className="flex flex-col gap-6"
+            className="flex flex-col gap-6 h-full"
             data-aos="fade-right"
             data-aos-duration="700"
           >
@@ -118,10 +118,10 @@ const ContactSection = () => {
             data-aos="fade-left"
             data-aos-duration="700"
             data-aos-delay="100"
-            className="border-blue-100 dark:border-gray-800 bg-blue-50/40 dark:bg-gray-900"
+            className="border-blue-100 dark:border-gray-800 bg-blue-50/40 dark:bg-gray-900 h-full flex flex-col"
           >
-            <CardContent className="p-6 sm:p-8 flex flex-col gap-4">
-              <div className="flex flex-col gap-1.5">
+            <CardContent className="p-6 sm:p-10 flex flex-col gap-6 h-full">
+              <div className="flex flex-col gap-2">
                 <Label className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide">
                   Name
                 </Label>
@@ -152,7 +152,7 @@ const ContactSection = () => {
               </div>
 
               {/* fixed rows so the box doesn't stretch to match the left side */}
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-col gap-1.5 flex-1">
                 <Label className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide">
                   Message
                 </Label>
@@ -161,17 +161,16 @@ const ContactSection = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Tell me about your project or just say hi..."
-                  rows={5}
                   className="resize-none bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700
-                    focus-visible:ring-violet-400 dark:focus-visible:ring-violet-500"
+      focus-visible:ring-violet-400 dark:focus-visible:ring-violet-500 flex-1 min-h-[120px]"
                 />
               </div>
 
               <Button
                 onClick={handleSubmit}
                 disabled={status === "loading" || status === "success"}
-                className="w-full bg-violet-600 hover:bg-violet-700 dark:bg-violet-600
-                  dark:hover:bg-violet-700 text-white"
+                className="w-full mt-auto bg-violet-600 hover:bg-violet-700 dark:bg-violet-600
+    dark:hover:bg-violet-700 text-white"
               >
                 {status === "loading" && (
                   <Loader2 size={16} className="animate-spin mr-2" />
