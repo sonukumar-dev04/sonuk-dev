@@ -175,13 +175,13 @@ export const contactInfo = [
     icon: FaGithub,
     label: "GitHub",
     value: "github.com/light04sk",
-    href: "https://github.com/light04sk",
+    href: "https://github.com/sonukumar-dev04",
   },
   {
     icon: FaLinkedin,
     label: "LinkedIn",
     value: "linkedin.com/in/yourusername",
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/sonu-kumar-dev04/",
   },
   {
     icon: FaMapMarkerAlt,

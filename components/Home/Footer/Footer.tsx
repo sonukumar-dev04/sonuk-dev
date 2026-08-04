@@ -8,17 +8,17 @@ import { Heart } from "lucide-react";
 const socials = [
   {
     label: "GitHub",
-    href: "https://github.com/yourusername", // ← replace
+    href: "https://github.com/sonukumar-dev04",
     icon: FaGithub,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/yourusername", // ← replace
+    href: "https://www.linkedin.com/in/sonu-kumar-dev04/",
     icon: FaLinkedin,
   },
   {
     label: "Email",
-    href: "mailto:youremail@gmail.com", // ← replace
+    href: "mailto:nsonukumar39630@gmail.com",
     icon: MdEmail,
   },
 ];
