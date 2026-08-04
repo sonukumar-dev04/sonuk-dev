@@ -174,13 +174,13 @@ export const contactInfo = [
   {
     icon: FaGithub,
     label: "GitHub",
-    value: "github.com/light04sk",
+    value: "github.com/sonukumar-dev04",
     href: "https://github.com/sonukumar-dev04",
   },
   {
     icon: FaLinkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/yourusername",
+    value: "linkedin.com/in/sonu-kumar-dev04",
     href: "https://www.linkedin.com/in/sonu-kumar-dev04/",
   },
   {
